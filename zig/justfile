@@ -6,7 +6,7 @@ default:
 
 # Build the project using Zig
 build:
-    zig build
+    zig build --cache-dir /tmp/cache
 
 # Run the project after building
 run:
@@ -14,15 +14,7 @@ run:
 
 # Clean build artifacts
 clean:
-    rm -rf zig-out .zig-cache
+    rm -rf zig-out /tmp/cache
 
 # Rebuild from scratch
 rebuild: clean build
-
-# Run with a custom cache dir to avoid permission issues
-safe-build:
-    zig build --cache-dir /tmp/cache2
-
-# Run safely with custom cache dir
-safe-run:
-    zig build --cache-dir /tmp/cache2 run
