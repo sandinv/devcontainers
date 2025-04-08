@@ -3,11 +3,13 @@
   "packages": [
     "path:./zig-master#zig-master",
     "sqlite@latest",
-    "github:nixos/nixpkgs#sqlite^dev"
+    "github:nixos/nixpkgs#sqlite^dev",
+    "just@latest"
   ],
   "shell": {
     "init_hook": [
-      "echo 'Welcome to devbox!' > /dev/null"
+      "echo 'Welcome to devbox!' > /dev/null",
+      "alias j=just"
     ],
     "scripts": {
       "test": [

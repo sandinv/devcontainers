@@ -1,8 +1,8 @@
 {
 	"name": "Zig Dev Container",
 	"build": {
-	  "dockerfile": "Dockerfile",
-	  "context": "."
+		"dockerfile": "Dockerfile",
+		"context": "."
 	},
 	"customizations": {
 		"vscodium": {
@@ -53,247 +53,247 @@
 				},
 				"vim.insertModeKeyBindings": [
 					{
-					"before": [
-						"j",
-						"j"
-					],
-					"after": [
-						"<Esc>"
-					]
+						"before": [
+							"j",
+							"j"
+						],
+						"after": [
+							"<Esc>"
+						]
 					}
 				],
 				"vim.normalModeKeyBindingsNonRecursive": [
 					{
-					"before": [
-						"<leader>",
-						"d"
-					],
-					"after": [
-						"d",
-						"d"
-					]
+						"before": [
+							"<leader>",
+							"d"
+						],
+						"after": [
+							"d",
+							"d"
+						]
 					},
 					{
-					"before": [
-						"<leader>",
-						"i"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.action.terminal.focus"
-						}
-					]
+						"before": [
+							"<leader>",
+							"i"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.action.terminal.focus"
+							}
+						]
 					},
 					{
-					"before": [
-						"<leader>",
-						"n"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.action.compareEditor.nextChange"
-						}
-					]
+						"before": [
+							"<leader>",
+							"n"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.action.compareEditor.nextChange"
+							}
+						]
 					},
 					{
-					"before": [
-						"<leader>",
-						"p"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.action.compareEditor.previousChange"
-						}
-					]
+						"before": [
+							"<leader>",
+							"p"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.action.compareEditor.previousChange"
+							}
+						]
 					},
 					{
-					"before": [
-						"<leader>",
-						"C"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.action.closeOtherEditors"
-						}
-					]
+						"before": [
+							"<leader>",
+							"C"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.action.closeOtherEditors"
+							}
+						]
 					},
 					{
-					"before": [
-						"<leader>",
-						"o"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.action.quickOpen"
-						}
-					]
+						"before": [
+							"<leader>",
+							"o"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.action.quickOpen"
+							}
+						]
 					},
 					{
-					"before": [
-						"<leader>",
-						"t",
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.action.terminal.toggleTerminal"
-						}
-					]
+						"before": [
+							"<leader>",
+							"t",
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.action.terminal.toggleTerminal"
+							}
+						]
 					},
 					{
-					"before": [
-						"<leader>",
-						"P"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "projectManager.listProjects"
-						}
-					]
+						"before": [
+							"<leader>",
+							"P"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "projectManager.listProjects"
+							}
+						]
 					},
 					{
-					"before": [
-						"<leader>",
-						"v"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.action.splitEditor"
-						}
-					]
+						"before": [
+							"<leader>",
+							"v"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.action.splitEditor"
+							}
+						]
 					},
 					{
-					"before": [
-						"S-l"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.action.nextEditor"
-						}
-					]
+						"before": [
+							"S-l"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.action.nextEditor"
+							}
+						]
 					},
 					{
-					"before": [
-						"<S-h>"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.action.previousEditor"
-						}
-					]
+						"before": [
+							"<S-h>"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.action.previousEditor"
+							}
+						]
 					},
 					{
-					"before": [
-						"<C-h>",
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.action.focusFirstEditorGroup"
-						}
-					]
+						"before": [
+							"<C-h>",
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.action.focusFirstEditorGroup"
+							}
+						]
 					},
 					{
-					"before": [
-						"S-k",
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "editor.action.showHover"
-						}
-					]
+						"before": [
+							"S-k",
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "editor.action.showHover"
+							}
+						]
 					},
 					{
-					"before": [
-						"<leader>",
-						"c",
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.action.closeActiveEditor"
-						}
-					]
+						"before": [
+							"<leader>",
+							"c",
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.action.closeActiveEditor"
+							}
+						]
 					},
 					{
-					"before": [
-						"<leader>",
-						"f"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.view.explorer"
-						}
-					]
+						"before": [
+							"<leader>",
+							"f"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.view.explorer"
+							}
+						]
 					},
 					{
-					"before": [
-						"<leader>",
-						"S"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.view.scm"
-						}
-					]
+						"before": [
+							"<leader>",
+							"S"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.view.scm"
+							}
+						]
 					},
 					{
-					"before": [
-						"<leader>",
-						"1"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "outline.focus"
-						}
-					]
+						"before": [
+							"<leader>",
+							"1"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "outline.focus"
+							}
+						]
 					},
 					{
-					"before": [
-						"<leader>",
-						"P"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "projectManager.listProjectsNewWindow"
-						}
-					]
+						"before": [
+							"<leader>",
+							"P"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "projectManager.listProjectsNewWindow"
+							}
+						]
 					},
 					{
-					"before": [
-						"<C-l>",
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": "workbench.action.focusSecondEditorGroup"
-						}
-					]
+						"before": [
+							"<C-l>",
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": "workbench.action.focusSecondEditorGroup"
+							}
+						]
 					},
 					{
-					"before": [
-						"<C-n>"
-					],
-					"after": [],
-					"commands": [
-						{
-						"command": ":nohl"
-						}
-					]
+						"before": [
+							"<C-n>"
+						],
+						"after": [],
+						"commands": [
+							{
+								"command": ":nohl"
+							}
+						]
 					}
 				],
 				"workbench.startupEditor": "newUntitledFile",
@@ -364,4 +364,4 @@
 	},
 	"remoteUser": "devbox",
 	"features": {}
-  }
+}

@@ -1,0 +1,28 @@
+# Justfile for building and running a Zig project
+
+# Default target: build the project
+default:
+    just build
+
+# Build the project using Zig
+build:
+    zig build
+
+# Run the project after building
+run:
+    zig build run
+
+# Clean build artifacts
+clean:
+    rm -rf zig-out .zig-cache
+
+# Rebuild from scratch
+rebuild: clean build
+
+# Run with a custom cache dir to avoid permission issues
+safe-build:
+    zig build --cache-dir /tmp/cache2
+
+# Run safely with custom cache dir
+safe-run:
+    zig build --cache-dir /tmp/cache2 run
