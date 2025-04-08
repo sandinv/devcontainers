@@ -1,8 +1,10 @@
 {
   "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
   "packages": [
-    "path:./zig-master#zig-master"
-   ],
+    "path:./zig-master#zig-master",
+    "sqlite@latest",
+    "github:nixos/nixpkgs#sqlite^dev"
+  ],
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox!' > /dev/null"
