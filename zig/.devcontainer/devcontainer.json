@@ -347,19 +347,19 @@
 				"zig.zls.inlayHintsHideRedundantParamNamesLastToken": true,
 				"editor.formatOnSaveMode": "modifications"
 			},
-			"extensions": [
-				"eamodio.gitlens",
-				"gitlab.gitlab-workflow",
-				"jdinhlife.gruvbox",
-				"johnpapa.vscode-peacock",
-				"mads-hartmann.bash-ide-vscode",
-				"ms-vscode.hexeditor",
-				"redhat.vscode-yaml",
-				"vadimcn.vscode-lldb",
-				"vscodevim.vim",
-				"jetpack-io.devbox",
-				"ziglang.vscode-zig"
-			]
+			"extensions": {
+				"eamodio.gitlens": {},
+				"gitlab.gitlab-workflow": {},
+				"jdinhlife.gruvbox": {},
+				"johnpapa.vscode-peacock": {},
+				"mads-hartmann.bash-ide-vscode": {},
+				"ms-vscode.hexeditor": {},
+				"redhat.vscode-yaml": {},
+				"vadimcn.vscode-lldb": {},
+				"vscodevim.vim": {},
+				"jetpack-io.devbox": {},
+				"ziglang.vscode-zig": {}
+			}
 		}
 	},
 	"remoteUser": "devbox",
