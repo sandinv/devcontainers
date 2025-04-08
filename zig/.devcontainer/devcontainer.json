@@ -363,7 +363,5 @@
 		}
 	},
 	"remoteUser": "devbox",
-	"features": {
-	},
-	"postCreateCommand": "go mod tidy || true"
+	"features": {}
   }

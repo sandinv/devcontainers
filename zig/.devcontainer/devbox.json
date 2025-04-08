@@ -1,22 +1,8 @@
 {
-  "$schema":  "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
-  "packages": [],
-  "nix": {
-    "flakes": true
-  },
-  "overlays": [
-    {
-      "type": "github",
-      "repo": "mitchellh/zig-overlay"
-    }
-  ],
-  "customPkgs": [
-    {
-      "name": "zig-master",
-      "flake": "./.",
-      "package": "zig-master"
-    }
-  ],
+  "$schema": "https://raw.githubusercontent.com/jetify-com/devbox/0.14.0/.schema/devbox.schema.json",
+  "packages": [
+    "path:./zig-master#zig-master"
+   ],
   "shell": {
     "init_hook": [
       "echo 'Welcome to devbox!' > /dev/null"
