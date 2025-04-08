@@ -1,0 +1,40 @@
+# --- Devbox ---
+.devbox/
+devbox.lock
+result
+
+# Optional: if you use flakes
+flake.lock
+
+# Nix garbage (if applicable)
+*.drv
+*.gc-daemon-log
+*.tmp
+*.log
+*.out
+
+# --- Dev Container ---
+.devcontainer/devcontainer.json-backup
+*.code-workspace
+
+# VS Code Server inside container
+.vscode-server/
+.vscode-remote/
+.vscode-test/
+
+# Docker-related
+docker-compose.override.yml
+Dockerfile-backup
+docker-volume-data/
+
+# --- VS Code general ---
+.vscode/
+.history/
+
+# OS & Editor trash
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*~
