@@ -7,6 +7,7 @@ const Student = struct {
     name: []const u8,
     age: u16,
     favourites: []const []const u8,
+    married: ?bool = null,
 
     fn deinit(self: *Student, allocator: Allocator) void {
         allocator.free(self.name);
@@ -28,6 +29,7 @@ pub fn main() !void {
         .name = "John",
         .age = 20,
         .favourites = &.{ "swimming", "running" },
+        .married = true,
     };
     var dst = std.ArrayList(u8).init(allocator);
     defer dst.deinit();
@@ -39,6 +41,7 @@ pub fn main() !void {
         \\    .name = "John",
         \\    .age = 20,
         \\    .favourites = .{ "swimming", "running" },
+        \\    .married = true,
         \\}
     ;
 
@@ -58,5 +61,5 @@ pub fn main() !void {
 
     try std.testing.expectEqualDeep(source, parsed);
 
-    std.debug.print("Parsed correctly", .{});
+    std.debug.print("Parsed correctly\n", .{});
 }
