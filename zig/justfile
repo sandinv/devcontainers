@@ -1,10 +1,13 @@
 # Justfile for building and running a Zig project
+alias r := run-simple
 
 # Default target: build the project
+[no-cd]
 default:
     just run-simple
 
 # Simple run
+[no-cd]
 run-simple:
     zig run main.zig
 
@@ -13,12 +16,24 @@ build:
     zig build --cache-dir /tmp/cache
 
 # Run the project after building
+[no-cd]
 run:
     zig build run
 
 # Clean build artifacts
+[no-cd]
 clean:
     rm -rf zig-out /tmp/cache
 
 # Rebuild from scratch
+[no-cd]
 rebuild: clean build
+
+up:
+    devpod up .
+
+down:
+    devpod down .
+
+up-clean:
+    devpod up --recreate .
