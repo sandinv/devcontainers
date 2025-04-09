@@ -2,7 +2,7 @@ theme = "adwaita-dark"
 
 [editor]
 true-color = true
-color-modes = fase
+color-modes = false
 
 [keys.normal]
 G = "goto_file_end"
