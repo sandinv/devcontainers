@@ -1,0 +1,10 @@
+theme = "dracula"
+
+[editor]
+true-color = true
+
+[keys.normal]
+G = "goto_file_end"
+D = "delete_selection_noyank"
+0 = "goto_line_start"
+"$" = "goto_line_end"

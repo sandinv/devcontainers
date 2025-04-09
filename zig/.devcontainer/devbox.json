@@ -4,7 +4,9 @@
     "path:./zig-master#zig-master",
     "sqlite@latest",
     "github:nixos/nixpkgs#sqlite^dev",
-    "just@latest"
+    "just@latest",
+    "tmux@latest",
+    "helix@latest"
   ],
   "shell": {
     "init_hook": [
