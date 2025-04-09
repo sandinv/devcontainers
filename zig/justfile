@@ -11,14 +11,23 @@ default:
 run-simple:
     zig run main.zig
 
+[no-cd]
+run-watch:
+    watchexec -e zig -r -c -- zig run main.zig
+
 # Build the project using Zig
+[no-cd]
 build:
     zig build --cache-dir /tmp/cache
 
 # Run the project after building
 [no-cd]
 run:
-    zig build run
+    zig build run --cache-dir /tmp/cache
+
+[no-cd]
+run-build-watch:
+    watchexec -e zig -r -c -- zig build run --cache-dir /tmp/cache
 
 # Clean build artifacts
 [no-cd]
@@ -37,3 +46,4 @@ down:
 
 up-clean:
     devpod up --recreate .
+
