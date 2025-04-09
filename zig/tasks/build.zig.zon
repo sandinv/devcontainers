@@ -1,0 +1,21 @@
+.{
+    .name = .tasks,
+
+    .version = "0.0.0",
+
+    .fingerprint = 0x5058659705da56de, // Changing this has security and trust implications.
+
+    .minimum_zig_version = "0.15.0-dev.208+8acedfd5b",
+
+    .dependencies = .{
+        .yazap = .{
+            .url = "git+https://github.com/prajwalch/yazap#71490491b8f1b0741218160b88cf0a87d2a941ce",
+            .hash = "yazap-0.6.3-Z1t-EiLlAQCR5mUSOlF1PovnwyPcIUGeV02lAIVMUEOc",
+        },
+    },
+    .paths = .{
+        "build.zig",
+        "build.zig.zon",
+        "main.zig",
+    },
+}
