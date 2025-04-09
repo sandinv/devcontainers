@@ -1,7 +1,8 @@
-theme = "dracula"
+theme = "adwaita-dark"
 
 [editor]
 true-color = true
+color-modes = fase
 
 [keys.normal]
 G = "goto_file_end"

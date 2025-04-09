@@ -2,7 +2,11 @@
 
 # Default target: build the project
 default:
-    just build
+    just run-simple
+
+# Simple run
+run-simple:
+    zig run main.zig
 
 # Build the project using Zig
 build:
