@@ -1,14 +1,17 @@
 # Justfile for building and running a Zig project
-alias r := run-simple
+alias r := run
+alias rw := run-watch
+alias brw := build-run-watch
+alias c := clean
 
 # Default target: build the project
 [no-cd]
 default:
-    just run-simple
+    just run
 
 # Simple run
 [no-cd]
-run-simple:
+run:
     zig run main.zig
 
 [no-cd]
@@ -18,21 +21,21 @@ run-watch:
 # Build the project using Zig
 [no-cd]
 build:
-    zig build --cache-dir /tmp/cache
+    zig build
 
 # Run the project after building
 [no-cd]
-run:
-    zig build run --cache-dir /tmp/cache
+build-run:
+    zig build run
 
 [no-cd]
-run-build-watch:
-    watchexec -e zig -r -c -- zig build run --cache-dir /tmp/cache
+build-run-watch:
+    watchexec -e zig -r -c -- zig build run
 
 # Clean build artifacts
 [no-cd]
 clean:
-    rm -rf zig-out /tmp/cache
+    rm -rf zig-out /tmp/zig-cache-local
 
 # Rebuild from scratch
 [no-cd]
