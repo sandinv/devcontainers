@@ -345,6 +345,7 @@
 				"zig.zls.enableSnippets": false,
 				"zig.zls.inlayHintsShowParameterName": false,
 				"zig.zls.inlayHintsHideRedundantParamNamesLastToken": true,
+				"zig.zls.globalCachePath": "/tmp/zig-cache-global",
 				"editor.formatOnSaveMode": "modifications"
 			},
 			"extensions": {
