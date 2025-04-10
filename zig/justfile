@@ -1,8 +1,9 @@
 # Justfile for building and running a Zig project
-alias r := run
-alias rw := run-watch
+alias r   := run
+alias rw  := run-watch
 alias brw := build-run-watch
-alias c := clean
+alias br  := build-run
+alias c   := clean
 
 # Default target: build the project
 [no-cd]
@@ -25,8 +26,8 @@ build:
 
 # Run the project after building
 [no-cd]
-build-run:
-    zig build run
+build-run *args:
+    zig build run -- {{args}}
 
 [no-cd]
 build-run-watch:
